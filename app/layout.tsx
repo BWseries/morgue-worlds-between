@@ -1,3 +1,5 @@
+import './globals.css';
+
 export const metadata = {
   title: 'Morgue: Worlds Between',
   description: 'Dark fantasy horror series',
