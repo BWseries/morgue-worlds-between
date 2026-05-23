@@ -5,7 +5,7 @@ const characters = [
   {
     name: 'Dr. Elara Voss',
     role: 'Forensic Pathologist',
-    image: '/images/Elara_autopsy_lab_coat_Verrin.png',
+    image: '/images/elara tnsprtnt bkgrnd.png',
   },
   {
     name: 'Detective Rayne',
