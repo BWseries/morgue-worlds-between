@@ -15,7 +15,7 @@ const characters = [
   {
     name: 'Verrin',
     role: 'The Infernal King',
-    image: '/verrin standing pose 001 tnsprtnt bkgrnd.jpg',
+    image: '/verrin_NEW_nobg.png',
   },
 ];
 
