@@ -97,7 +97,7 @@ export default function DarkFantasyHomepage() {
                   <img
                     src={char.image}
                     alt={char.name}
-                    className="w-full h-80 object-cover"
+                   className="w-full h-80 object-contain bg-black"
                   />
                   <div className="p-4">
                     <h3 className="text-xl">{char.name}</h3>
