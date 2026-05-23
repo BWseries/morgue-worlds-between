@@ -14,7 +14,7 @@ const characters = [
   },
   {
     name: 'Verrin',
-    role: 'Ruler',
+    role: 'Ruler within Underworld',
     image: '/images/verrin_NEW_nobg.png',
   },
 ];
