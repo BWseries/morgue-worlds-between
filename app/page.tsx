@@ -15,7 +15,7 @@ const characters = [
   {
     name: 'Verrin',
     role: 'Ruler',
-    image: '/verrin_NEW_nobg.png',
+    image: '/images/verrin_NEW_nobg.png',
   },
 ];
 
