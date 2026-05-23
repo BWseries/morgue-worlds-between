@@ -5,17 +5,17 @@ const characters = [
   {
     name: 'Dr. Elara Voss',
     role: 'Forensic Pathologist',
-    image: 'https://placehold.co/400x600?text=Elara',
+    image: '/images/Elara_autopsy_lab_coat_Verrin.png',
   },
   {
-    name: 'Detective Raines',
+    name: 'Detective Rayne',
     role: 'Homicide Detective',
-    image: 'https://placehold.co/400x600?text=Raines',
+    image: '/images/Det Rayne.png',
   },
   {
     name: 'Verrin',
     role: 'The Infernal King',
-    image: 'https://placehold.co/400x600?text=Verrin',
+    image: '/images/verrin standing pose 001.jpg',
   },
 ];
 
