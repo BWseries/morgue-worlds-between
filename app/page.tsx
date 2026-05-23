@@ -32,7 +32,12 @@ export default function DarkFantasyHomepage() {
             <div className="text-4xl text-[#7a1116] mb-8">◈</div>
             <nav className="space-y-5 text-sm tracking-[0.2em] uppercase text-[#d8d1c5]/80">
               {['Home', 'Characters', 'Case Files', 'Infernal Archive', 'Lore', 'Gallery', 'About'].map((item) => (
-                <div key={item} className="hover:text-[#d46a3a] cursor-pointer transition-colors">{item}</div>
+                <div
+                  key={item}
+                  className="hover:text-[#d46a3a] cursor-pointer transition-colors"
+                >
+                  {item}
+                </div>
               ))}
             </nav>
           </div>
@@ -48,24 +53,29 @@ export default function DarkFantasyHomepage() {
             {/* Faded atmospheric hero artwork */}
             <div
               className="absolute inset-0 bg-center bg-cover opacity-20"
-              style={{ backgroundImage: "url('/mnt/data/Gemini_Generated_Image_25ftq225ftq225ft.png')" }}
+              style={{ backgroundImage: "url('/images/hero-throne.png')" }}
             />
             <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.65),rgba(0,0,0,0.92))]" />
+
             <div className="relative z-10">
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              className="text-6xl md:text-8xl tracking-wide mb-4"
-            >
-              MORGUE:<br />WORLDS BETWEEN
-            </motion.h1>
-            <p className="text-xl text-[#d8d1c5]/70 max-w-xl mb-8">
-              Death is not the end. It is only the doorway.
-            </p>
-            <button className="self-start px-8 py-3 border border-[#7a1116] text-[#d8d1c5] hover:bg-[#7a1116]/20 rounded-xl transition-all">
-              Enter the Archive
-            </button>
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                className="text-6xl md:text-8xl tracking-wide mb-4"
+              >
+                MORGUE:
+                <br />
+                WORLDS BETWEEN
+              </motion.h1>
+
+              <p className="text-xl text-[#d8d1c5]/70 max-w-xl mb-8">
+                Death is not the end. It is only the doorway.
+              </p>
+
+              <button className="self-start px-8 py-3 border border-[#7a1116] text-[#d8d1c5] hover:bg-[#7a1116]/20 rounded-xl transition-all">
+                Enter the Archive
+              </button>
             </div>
           </section>
 
@@ -75,6 +85,7 @@ export default function DarkFantasyHomepage() {
               <h2 className="text-3xl">Character Codex</h2>
               <span className="text-sm text-[#d46a3a] cursor-pointer">View All</span>
             </div>
+
             <div className="grid md:grid-cols-3 gap-6">
               {characters.map((char) => (
                 <motion.div
@@ -82,10 +93,16 @@ export default function DarkFantasyHomepage() {
                   whileHover={{ y: -6 }}
                   className="bg-white/5 border border-white/10 rounded-xl overflow-hidden shadow-2xl"
                 >
-                  <img src={char.image} alt={char.name} className="w-full h-80 object-cover" />
+                  <img
+                    src={char.image}
+                    alt={char.name}
+                    className="w-full h-80 object-cover"
+                  />
                   <div className="p-4">
                     <h3 className="text-xl">{char.name}</h3>
-                    <p className="text-[#d46a3a] text-sm uppercase tracking-wider">{char.role}</p>
+                    <p className="text-[#d46a3a] text-sm uppercase tracking-wider">
+                      {char.role}
+                    </p>
                   </div>
                 </motion.div>
               ))}
@@ -102,6 +119,7 @@ export default function DarkFantasyHomepage() {
                 <li>Case 09-2310 — Infernal Marks</li>
               </ul>
             </div>
+
             <div className="border border-white/10 rounded-xl p-8 bg-white/5">
               <h2 className="text-2xl mb-4">Infernal Archive</h2>
               <ul className="space-y-3 text-[#d8d1c5]/70">
@@ -117,4 +135,3 @@ export default function DarkFantasyHomepage() {
     </main>
   );
 }
-
