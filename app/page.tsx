@@ -3,19 +3,19 @@ import { motion } from 'framer-motion';
 
 const characters = [
   {
+    name: 'Verrin',
+    role: 'Ruler within Underworld',
+    image: '/images/verrin_NEW_nobg.png',
+  },
+  {
     name: 'Dr. Elara Voss',
-    role: 'Forensic Pathologist',
+    role: 'Forensic Pathologist, Chief M.E.',
     image: '/images/elara tnsprtnt bkgrnd.png',
   },
   {
     name: 'Detective Rayne',
     role: 'Homicide Detective',
-    image: '/images/Det Rayne.png',
-  },
-  {
-    name: 'Verrin',
-    role: 'Ruler within Underworld',
-    image: '/images/verrin_NEW_nobg.png',
+    image: 'Det Rayne_dirty_blonde_hair.png',
   },
 ];
 
