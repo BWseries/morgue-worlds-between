@@ -15,7 +15,7 @@ const characters = [
   {
     name: 'Detective Rayne',
     role: 'Homicide Detective',
-    image: 'Det Rayne_alt.png',
+    image: '/images/Det Rayne_alt.png',
   },
 ];
 
